@@ -13,7 +13,7 @@ KILL_LIST=()
 EMAIL_LIST=()
 SEND_LIST=()
 while read PROC_UID PROC_USER PROC_PID PROC_ETIMES PROC_ETIME PROC_COMM; do
-    if [ $PROC_UID -gt U_ID  -a "$PROC_COMM" == "$NAME_KILL" -a $PROC_ETIMES -gt $KILL_TIME ]; then
+    if [ $PROC_UID -gt $U_ID  -a "$PROC_COMM" == "$NAME_KILL" -a $PROC_ETIMES -gt $KILL_TIME ]; then
     KILL_LIST+=("$PROC_PID");
     MSG="Killing '$PROC_COMM' which runs for $PROC_ETIME";
     echo "$MSG";
