@@ -1,0 +1,9 @@
+[Unit]
+Description=Kill Process if Python command runtime is more then 5 minutes
+After=network-online.target
+
+[Service]
+ExecStart=/root/python_proc_kill.sh
+
+[Install]
+WantedBy=multi-user.target
