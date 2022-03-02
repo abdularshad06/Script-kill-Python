@@ -4,7 +4,7 @@ sudo cp killpython.service /etc/systemd/system/killpython.service
 
 sudo chmod +x python_proc_kill.sh
 
-sudo systemctl daemon-reloadreload
+sudo systemctl daemon-reload
 
 sudo systemctl start killpython.service
 
