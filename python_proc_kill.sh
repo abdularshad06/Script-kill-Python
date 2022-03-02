@@ -7,7 +7,7 @@ do
 	NAME_KILL="python"
 
 	#Time in seconds which the process is allowed to run
-	KILL_TIME=5
+	KILL_TIME=300
 
 	#Set UID
 	U_ID=10000
